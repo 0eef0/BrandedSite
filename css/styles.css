@@ -1,0 +1,49 @@
+body{
+    background-color: #5b65ad;
+    color: #fadf02;
+}
+/* The code below sets up the layout of each page of the site */
+div.mainDiv{
+    display: grid;
+    grid-template-areas: 
+    'logo   content content'
+    'navbar content content'
+    'navbar content content'
+    'footer footer  footer';
+    grid-template-columns: 30% 70%;
+    grid-gap: 1rem;
+}
+div.logo{
+    grid-area: logo;
+}
+div.content{
+    grid-area: content;
+    background-color: #3EAB6B;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+}
+div.navbar{
+    grid-area: navbar;
+    background-color: #3EAB6B;
+    border: 2px solid black;
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.footer{
+    grid-area: footer;
+    background-color: #72A7F7;
+    border: 6px solid #4F76B3;
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+li a{
+    color: #fadf02;
+    text-decoration: none;
+}
