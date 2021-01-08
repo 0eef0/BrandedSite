@@ -12,6 +12,7 @@ div.mainDiv{
     'footer footer  footer';
     grid-template-columns: 30% 70%;
     grid-gap: 1rem;
+    margin-top: -1rem;
 }
 div.logo{
     grid-area: logo;
@@ -19,11 +20,15 @@ div.logo{
 div.content{
     grid-area: content;
     background-color: #3EAB6B;
-    width: 90%;
+    border: 2px solid black;
+    width: 80%;
+    height: 32rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 3rem;
+    padding: 1rem;
+    overflow: auto;
 }
 div.navbar{
     grid-area: navbar;
@@ -42,8 +47,38 @@ div.footer{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
-li a{
+a{
     color: #fadf02;
     text-decoration: none;
+}
+
+/* The styles below are for the shop items */
+div.item{
+    background-color: rgb(100,100,100,0.5);
+    width: 95%;
+    height: 10rem;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+td.itemImage{
+    width: 10%;
+}
+td.itemInfo{
+    width: 60%;
+}
+td button{
+    height: 30%;
+    background-color: #72A7F7;
+    color: #fadf02;
+    border: #4F76B3 2px solid;
+}
+
+/* styles for the cart */
+fieldset{
+    border-color: black;
 }
