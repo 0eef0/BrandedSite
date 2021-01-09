@@ -7,7 +7,9 @@ var items = [
     ["brick", "Medieval Weaponry", 25, "We are 90% sure that this was used to commit armed robbery, so if you wish to be able to defend yourself at moment's notice, this is what you need."],
     ["liquid", "Mystery Liquid", 10, "Chemical tests have come back saying that this liquid is a nonlethal substance. So summon your sense of adventure and find out what his is by buying it!"],
     ["sweater", "Christmas Sweater", 5, "We found this one on exactly December 26th, 2020. Our guess is that it is a Christmas Gift that someone just did not appreciate enough. Show this sweater that love it deserves and buy it now!"],
-    ["couch", "Totally Beautiful Couch", 40, "We found this one in a neighborhood during a bulk trash pickup day. We don't know why it was tossed out, we just know that it's a functioning couch."]
+    ["couch", "Totally Beautiful Couch", 40, "We found this one in a neighborhood during a bulk trash pickup day. We don't know why it was tossed out, we just know that it's a functioning couch."],
+    ["used", "Slightly-Used Sofa", 30, "As you can see, this sofa is only slightly used. We are sure that this sofa will fit the desired aesthetic of your home, 100% guaranteed!"],
+    ["apple", "Slightly-Used Apple", 1, "The price was a little knocked off because it is more used than we had originally imagined. Still very funtional though."]
 ];
 
 //function below creates an item listing (super proud of writng this one :D )
@@ -18,13 +20,13 @@ function createItem(img, name, price, description){
     '                        <td class="itemImage">'+
     '                            <img src="images/' + img + '.png" height="150rem">'+
     '                        </td>'+
-    '                        <td class="itemInfo">'+
+    '                        <td class="itemInfo" style="height: 50%;">'+
     '                            <h3>'+ name + '</h3>'+
     '                            <p>$' + price + '</p>'+
     '                            <p>' + description + '</p>'+
     '                        </td>'+
-    '                        <td style="vertical-align: bottom; text-align: right;">'+
-    '                            <button><p>Add to Cart</p></button>'+
+    '                        <td style="vertical-align: bottom; text-align: right">'+
+    '                            <button style="display: inline-block"><p>Add to Cart</p></button>'+
     '                        </td>'+
     '                    </tr>'+
     '                </table>';
@@ -155,5 +157,6 @@ function prepareCart(){
     '                    /'+
     '                    <input type="text" id="exp" maxlength="2" style="width: 2rem">   '+
     '                </fieldset>'+
-    '                <button type="submit">Submit</button>';
+    '                <br>' +
+    '                <button type="submit">Checkout</button>';
  }
